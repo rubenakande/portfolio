@@ -3,95 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <meta name="description" content="Akande Ruben - Data Analyst Portfolio showcasing expertise in Python, SQL, Tableau, and data visualization projects.">
+    <meta name="keywords" content="data analyst, portfolio, Python, SQL, Tableau, PowerBI, data visualization, machine learning">
+    <meta name="author" content="Akande Ruben">
+    <meta name="robots" content="index, follow">
+    <title>Akande Ruben - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
           crossorigin="anonymous" 
           referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 font-sans">
     <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold">Akande Ruben</a>
+            <button class="md:hidden focus:outline-none" id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6" id="nav-menu">
+                <li><a href="#home" class="hover:text-blue-300 transition duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-300 transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-300 transition duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition duration-300">Contact</a></li>
             </ul>
         </nav>
-        <div id="home" class="hero">
-            <h1>Akande Ruben</h1>
-            <h2>Data Analyst</h2>
-            <p>Turning data into actionable insights.</p>
+        <div id="home" class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">Akande Ruben</h1>
+            <h2 class="text-2xl md:text-3xl text-blue-300 mb-4">Data Analyst</h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">Transforming complex data into actionable insights with Python, SQL, and Tableau.</p>
+            <a href="#contact" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get in Touch</a>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m a passionate data analyst with experience in extracting insights from complex datasets using Python, SQL, and Tableau. I specialize in data visualization, statistical analysis, and predictive modeling to drive business decisions.</p>
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">About Me</h2>
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-lg leading-relaxed">I'm a dedicated data analyst with a passion for uncovering insights from complex datasets. With expertise in Python, SQL, Tableau, and PowerBI, I specialize in data visualization, statistical analysis, and predictive modeling to empower data-driven business decisions.</p>
+        </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Microsoft PowerBI</li>
-            <li>Looker Studio</li>
-            <li>Microsoft Fabric</li>
-            <li>Python (Pandas, NumPy, Matplotlib)</li>
-            <li>SQL</li>
-            <li>Tableau</li>
-            <li>Excel</li>
-            <li>Machine Learning (Scikit-learn)</li>
-            <li>Data Cleaning and Preprocessing</li>
+    <section id="skills" class="container mx-auto px-4 py-16 bg-white">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Skills</h2>
+        <ul class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Microsoft PowerBI</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Looker Studio</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Microsoft Fabric</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Python (Pandas, NumPy, Matplotlib)</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">SQL</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Tableau</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Excel</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Machine Learning (Scikit-learn)</li>
+            <li class="bg-blue-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300">Data Cleaning and Preprocessing</li>
         </ul>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Sales Data Analysis</h3>
-            <p>Analyzed sales data to identify trends and optimize inventory using Python and Tableau. Created interactive dashboards for stakeholders.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Customer Churn Prediction</h3>
-            <p>Built a machine learning model using Scikit-learn to predict customer churn with 85% accuracy. Used SQL for data extraction.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Retail Sales Dashboard</h3>
-            <p>Developed an interactive Tableau dashboard to visualize retail sales trends across 5 regions, identifying top-performing products. Used SQL to extract data from a PostgreSQL database and Python for preprocessing.</p>
-            <img src="sales_dashboard_screenshot.png" alt="Sales Dashboard" style="max-width: 100%; height: auto;">
-            <a href="https://github.com/yourusername/sales-analysis" class="btn">View Code</a>
-            <a href="https://public.tableau.com/views/sales" class="btn">View Dashboard</a>
+    <section id="projects" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-2">Sales Data Analysis</h3>
+                <p class="mb-4">Analyzed sales data to identify trends and optimize inventory using Python and Tableau. Created interactive dashboards for stakeholders.</p>
+                <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">View Project</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-2">Customer Churn Prediction</h3>
+                <p class="mb-4">Built a machine learning model using Scikit-learn to predict customer churn with 85% accuracy. Used SQL for data extraction.</p>
+                <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">View Project</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-2">Retail Sales Dashboard</h3>
+                <p class="mb-4">Developed an interactive Tableau dashboard to visualize retail sales trends across 5 regions, identifying top-performing products.</p>
+                <img src="sales_dashboard_screenshot.png" alt="Retail Sales Dashboard Screenshot" class="w-full h-auto rounded-lg mb-4">
+                <div class="flex space-x-4">
+                    <a href="https://github.com/rubenakande/sales-analysis" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">View Code</a>
+                    <a href="https://public.tableau.com/views/sales" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">View Dashboard</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/+2349066176312" target="_blank" rel="noopener noreferrer">+234 (0) 906 617 6312</a></p>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:akanderuben17@gmail.com" target="_blank" rel="noopener noreferrer">akanderuben17@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/ruben-akande/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/ruben-akande/</a></p>
-        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/rubenakande" target="_blank" rel="noopener noreferrer">https://github.com/rubenakande</a></p>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="contact" class="container mx-auto px-4 py-16 bg-gray-200">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Contact Me</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <p class="mb-4"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/+2349066176312" target="_blank" rel="noopener noreferrer">+234 (0) 906 617 6312</a></p>
+                    <p class="mb-4"><i class="fas fa-envelope mr-2"></i><a href="mailto:akanderuben17@gmail.com" target="_blank" rel="noopener noreferrer">akanderuben17@gmail.com</a></p>
+                </div>
+                <div>
+                    <p class="mb-4"><i class="fab fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/ruben-akande/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+                    <p class="mb-4"><i class="fab fa-github mr-2"></i><a href="https://github.com/rubenakande" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div id="contact-form" class="flex flex-col gap-4">
+                    <input type="text" id="name" placeholder="Your Name" required class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" id="email" placeholder="Your Email" required class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <textarea id="message" placeholder="Your Message" required class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 h-32"></textarea>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Akande Ruben. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>© <span id="currentYear"></span> Akande Ruben. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
