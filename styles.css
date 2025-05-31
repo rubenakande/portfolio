@@ -16,3 +16,44 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Ensure the mobile menu takes full width and has a clean look */
+#nav-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    #nav-menu {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(to right, #2563eb, #4f46e5); /* Match header gradient */
+        position: absolute;
+        top: 100%; /* Position below the nav */
+        left: 0;
+        padding: 1rem 0;
+    }
+    #nav-menu.show {
+        display: flex; /* Show when toggled */
+    }
+    #nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+    #nav-menu a {
+        padding: 0.5rem 0;
+        display: block;
+    }
+}
+
+
+.header-scrolled .container:not(:first-child) {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.header-scrolled {
+    height: auto;
+}

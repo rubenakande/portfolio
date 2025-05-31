@@ -44,3 +44,28 @@
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
+
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        })
+
+
+        // Hide part of the header on scrolling up
+        const header = document.getElementById('header');
+    const homeDiv = document.getElementById('home');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 50) {
+            // Scrolling down and past 50px
+            header.classList.add('header-scrolled');
+        } else if (scrollTop <= 50) {
+            // At or near the top
+            header.classList.remove('header-scrolled');
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scroll
+    });
